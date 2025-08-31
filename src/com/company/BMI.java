@@ -27,7 +27,7 @@ public class BMI {
         frame.setBounds(200,200,300,200);
         frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
 
-        // high
+        // height
 
         // labels settings
         JLabel label = new JLabel("قد خود را وارد کنید");
@@ -71,9 +71,9 @@ public class BMI {
                 jFrame.setBounds(300,300,250,200);
 
                 if (textField.getText().length() > 0 && textField2.getText().length() > 0) {
-                    double high = Double.parseDouble(textField.getText()) / 100;
+                    double height = Double.parseDouble(textField.getText()) / 100;
                     double weight = Double.parseDouble(textField2.getText());
-                    double bmi = weight / (high * high);
+                    double bmi = weight / (height * height);
                     DecimalFormat format = new DecimalFormat("#.###");
                     JLabel jLabel = new JLabel(" BMI  = " + format.format(bmi));
                     jLabel.setFont(new Font("bold",Font.PLAIN ,20));
